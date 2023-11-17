@@ -1,0 +1,21 @@
+.custom_item .MuiButtonBase-root{
+    padding-left: 2.5rem;
+} 
+.custom_item .MuiListItemIcon-root{
+    min-width: 40px;
+} 
+.custom_item{
+    margin-top: 1.5rem !important;
+}
+.MuiPaper-root {
+    overflow-y: unset !important;
+    
+}
+.MuiDialog-container .MuiPaper-root{
+    width: 50%;
+    height: 50%;
+}
+.custom_input .MuiInputBase-input{
+    padding: 10px 40px;
+    padding-left: 0;
+}

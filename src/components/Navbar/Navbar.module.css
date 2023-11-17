@@ -1,0 +1,28 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+}
+.navbar_right_section{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.user{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.user_nav{
+    display: flex;
+}
