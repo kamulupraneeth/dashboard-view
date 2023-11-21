@@ -42,7 +42,11 @@ const Dashboard = ({ data, handleRandomizeLineData }) => {
         </Grid>
         <Grid item xs={6}>
           <Paper style={{ marginRight: 40 }}>
-            <WatchList width={width} height={height} />
+            <WatchList
+              width={width}
+              height={height}
+              data={data.AccountWatchlist}
+            />
           </Paper>
         </Grid>
       </Grid>

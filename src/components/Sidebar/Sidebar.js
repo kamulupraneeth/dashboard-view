@@ -65,6 +65,13 @@ const Sidebar = () => {
         { value: 60, month: "January" },
       ],
       CheckAccountData: [100, 135, 190, 130, 80, 130, 80, 115, 135],
+      AccountWatchlist: [
+        { Sales: { value1: 1194.58, value2: 11418.29 } },
+        { Advertising: { value1: 6879.02, value2: 9271.36 } },
+        { Inventory: { value1: 4692.26, value2: 9768.09 } },
+        { Entertainment: { value1: 0.0, value2: 0.0 } },
+        { Product: { value1: 4652.1, value2: 2529.9 } },
+      ],
     };
   }
 
@@ -82,6 +89,12 @@ const Sidebar = () => {
       CheckAccountData: chartData.CheckAccountData.map((entry) => [
         Math.floor(Math.random() * 50), // Replace with your logic to generate random values
       ]),
+      AccountWatchlist: chartData.AccountWatchlist.map((item) => ({
+        [Object.keys(item)[0]]: {
+          value1: Math.floor(Math.random() * 50),
+          value2: Math.floor(Math.random() * 50),
+        },
+      })),
     };
     setChartData(newChartData);
   };
